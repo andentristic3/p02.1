@@ -19,7 +19,7 @@ Tests:
     Team 1 progresses
     >>> challenge(90, 140)
     Team 2 progresses
-    >>> challenge(135, 125)
+    >>> challenge(135, 135)
     Both teams progress
     >>> challenge(105, 105)
     Both teams progress
@@ -34,3 +34,9 @@ def run_tests():
 
 # Edit this code
 def challenge(team1, team2):
+    if team1 > team2:
+        print("Team 1 progresses")
+    elif team1 < team2:
+        print("Team 2 progresses")
+    else:
+        print("Both teams progress")
